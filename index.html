@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive image slider using vanilla JavaScript">
+    <title>Image Slider Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+
+    <main class="page">
+
+        <header class="page-header">
+            <p class="eyebrow">IMAGE GALLERY</p>
+            <h1>Image Slider</h1>
+            <p class="subtitle">
+                Explore beautiful places around the world.
+            </p>
+        </header>
+
+        <section class="slider-section" aria-label="Image gallery">
+
+            <div class="image-slider" data-slider>
+
+                <div class="slider-viewport">
+                    <div class="slider-track">
+
+                        <figure class="slide">
+                            <img
+                                src="images/brazil.jpeg"
+                            >
+                        </figure>
+
+                        <figure class="slide">
+                            <img
+                                src="images/cute.jpeg"
+                            >
+                        </figure>
+
+                        <figure class="slide">
+                            <img
+                                src="images/neymar.jpeg"
+                            >
+                        </figure>
+
+                        <figure class="slide">
+                            <img
+                                src="images/young.jpeg"
+                            >
+                        </figure>
+
+                    </div>
+                </div>
+
+                <button
+                    class="slider-arrow previous"
+                    type="button"
+                    aria-label="Previous image"
+                >
+                    &#10094;
+                </button>
+
+                <button
+                    class="slider-arrow next"
+                    type="button"
+                    aria-label="Next image"
+                >
+                    &#10095;
+                </button>
+
+                <div
+                    class="slider-dots"
+                    aria-label="Choose an image"
+                ></div>
+
+                <p class="slide-status" aria-live="polite">
+                    Image 1 of 4
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
